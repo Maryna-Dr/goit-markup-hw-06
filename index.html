@@ -406,7 +406,9 @@
 
       <!-- Join -->
       <div class="join flex">
-        <h2 class="join-title"><em class="join-title-em">Приєднуйтесь</em></h2>
+        <h2 class="join-title">
+          <strong class="join-title-strong">Приєднуйтесь</strong>
+        </h2>
         <ul class="join-list list">
           <li class="item">
             <a class="join-link" href="" target="_blank" rel="noopener nofollower" aria-label="Instagram">
@@ -438,6 +440,23 @@
           </li>
         </ul>
       </div>
+
+      <!-- Mailing -->
+      <div class="mailing flex">
+        <h2 class="mailing-title">
+          <strong class="mailing-title-strong">Підпишіться на розсилку</strong>
+        </h2>
+        <form class="mailing-form flex" name="mailing-form">
+          <!-- <label> -->
+            <input class="mailing-input" type="email" name="mailing-email" placeholder="E-mail">
+          <!-- </label> -->
+          <button class="mailing-btn" type="submit">Підписатися
+            <svg class="mailing-icon" width="24" height="24">
+                <use href="./images/icon/icons.svg#mailing-icon"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
       </div>
     </footer>
 
@@ -449,9 +468,58 @@
           <use href="./images/icon/icons.svg#close"></use>
         </svg>
       </button>
+      <!-- Order form -->
+      <form class="order-form" name="order-form">
+        <strong class="order-title">Залиште свої дані, ми вам передзвонимо</strong>
+
+        <!-- Order group (user data) -->
+        <div class="order-group" role="group">
+          <label class="order-wrap">
+            <span class="order-label">Ім'я</span>
+            <input class="order-field" type="text" name="user-name">
+            <svg class="order-icon" width="18" height="18">
+              <use href="./images/icon/icons.svg#person"></use>
+            </svg>
+          </label>
+          <label class="order-wrap">
+            <span class="order-label">Телефон</span>
+            <input class="order-field" type="tel" name="user-phone">
+            <svg class="order-icon" width="18" height="18">
+              <use href="./images/icon/icons.svg#phone"></use>
+            </svg>
+          </label>
+          <label class="order-wrap">
+            <span class="order-label">Пошта</span>
+            <input class="order-field" type="email" name="user-mail">
+            <svg class="order-icon" width="18" height="18">
+              <use href="./images/icon/icons.svg#msg"></use>
+            </svg>
+          </label>
+          <label class="order-wrap">
+            <span class="order-label">Коментар</span>
+            <textarea class="order-comment" name="user-comment" rows="5" placeholder="Введіть текст"></textarea>
+          </label>    
+        </div>
+
+        <!-- Order agreement -->
+        <label class="order-agreement flex">
+          <input class="agreement-check visually-hidden" type="checkbox" name="user-agreement">
+          <svg class="agreement-icon" width="16" height="15">
+            <use class="uncheck-icon" href="./images/icon/icons.svg#uncheck"></use>
+            <use class="check-icon" href="./images/icon/icons.svg#check"></use>
+          </svg>
+          <span class="agreement-text">
+            Погоджуюся з розсилкою та приймаю 
+            <a class="agreement-link" href="" target="_blank">
+              Умови договору</a>
+          </span>
+        </label>
+
+        <button class="order-send-btn" type="submit">Відправити</button>
+
+      </form>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
